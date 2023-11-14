@@ -1,0 +1,215 @@
+/* header */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+    
+}
+*:focus{
+    outline: none;
+}
+
+.navbar{
+    width:auto;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F1523;
+    box-shadow: 0px 1px 5px black;
+    z-index: 1;
+    position: relative;
+  
+}
+
+.navbar .logo-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo-container img{
+    max-width: 7em;
+    height: auto;
+}
+
+.navbar .navbar-items-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.navbar-items-container a{
+    margin: 0.5rem 1.5rem 0 1.5rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-items-container li{
+    list-style: none;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: border 0.2s;
+    outline:none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.navbar-items-container li:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.navbar-items-container i{
+    display:none;
+    position: absolute;
+}
+
+.navbar-items-container i:hover{
+    cursor: pointer;
+}
+@keyframes animate-container{
+    from {width: 0}
+    to {width: 50vw}
+}
+
+@keyframes out-container{
+    from {width: 50vw;}
+    to {width:0}
+}
+
+#burger-container{
+    display:none;
+    position: fixed;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    background-color: red;
+    z-index: 5;
+    
+}
+
+.bars-items-container{
+    margin-top: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20vw;
+    margin-bottom: 30vh;
+}
+
+.bars-items-container li{
+    list-style: none;
+}
+
+.bars-items-container a{
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#burger-container.closing{
+    animation-name: out-container;
+    animation-duration: 1s;
+    display: flex;
+    width: 0; 
+}
+
+#burger-out.rotate{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+
+
+#burger-container.active{
+    display:flex;
+    width: 50vw;
+    animation-name: animate-container;
+    animation-duration: 1s;
+}
+
+#burger-container .bars-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#burger-in:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px){
+    .navbar .navbar-items-container{
+        width: 60%;
+        margin-right: 5rem;
+    }
+}
+@media only screen and (max-width: 991px){
+    
+    .navbar{
+        height: 80px;
+    }
+    
+    .navbar-items-container a{
+        display: none;
+    } 
+
+    .navbar-items-container i{
+        display:flex;
+        color:white;
+        font-size: 1.5rem;
+    }
+    .navbar .navbar-items-container{
+        width: 10%;
+        margin-right: 0;
+    }
+    .navbar .logo-container{
+        justify-content: left;
+    }
+
+}   
+
+@media only screen and (max-height: 633px){
+    .logo-container img{
+        width: 100%;
+        max-width: 5em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 250px){
+    .logo-container img{
+        width: 100%;
+        max-width: 5em;
+        height: auto;
+    }
+    .navbar-items-container i{
+        display:flex;
+        color:white;
+        font-size: 1rem;
+    }
+}
+
+

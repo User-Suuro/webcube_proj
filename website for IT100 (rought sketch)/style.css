@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.418) url(./brown-wood-textured-background-with-design-space.jpg);
+    background-blend-mode: darken;
+    display: flex;
+    padding:20px;
+    align-items: center;
+    color:whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header #header-right{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+#header #header-right h2{
+    font-size:18px
+}
+
+#header #header-right img{
+    width:10%;
+}
+
+#header #header-left{
+    margin:auto;
+    display:flex;
+    list-style-type: none;
+}
+
+#header #header-left li{
+    margin-left:20px;
+    padding-left:20px;
+    font-size: 18px;
+}
+
+#header #header-left li i{
+    margin-right:10px
+}
+
+#header #header-left li a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+#content{
+    display:flex;
+    width:auto;
+    height:700px;
+    background-color: orange;
+    align-items: center;
+}
+
+#content #text-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content #text-container h1{
+    font-size: 80px;
+}
+
+#content #text-container h5{
+    font-size:20px;
+    padding-left: 10px;
+}
+
+#content #image img{
+    width:100%;
+    max-width: 800px;
+    min-width: 100px;
+    height:auto;
+}
+
+@media screen and (max-width:1400px){
+    #content #text-container h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #content {
+        flex-direction: column;
+        text-align: center;
+        height:600px;
+    }
+    #content #text-container{
+        margin-top: 100px;
+        width: auto;
+    }
+}

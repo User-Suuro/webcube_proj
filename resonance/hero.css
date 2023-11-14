@@ -1,0 +1,225 @@
+/* hero-section */
+
+.hero{
+    display:flex;
+    align-items: start;
+    width: auto;
+    height: 35vw;
+    
+}
+
+.hero-vid-container{
+    width: 50%;
+}
+
+.hero-vid-container video{
+    height: 35vw;
+    width: 100%;
+    
+    object-fit:fill;
+}
+
+.hero-txt-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    background-color: rgb(17, 17, 158);
+}
+
+.hero-txt-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}   
+
+.hero-txt{
+    color:#ffffff;
+    
+}
+.hero:hover{
+    cursor:default; 
+}
+
+.hero:active{
+    user-select: none;
+}
+
+.hero-txt-container h1{
+    font-weight: lighter;
+    font-size: 5vw;
+    margin-bottom: -1vw;
+    text-align: center;
+    
+}
+
+.hero-txt-container button{
+    max-width: 150px;
+    padding: 0.8vw 1vw;
+    margin-top: 1vw;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    color: white;
+    transition: background-color 0.5s ease;
+    word-break: keep-all;
+}
+.hero-txt-container button p{
+    font-weight: 800;
+}
+
+.hero-txt-container button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#hero-i-container{
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: auto;
+  
+}
+
+#hero-i-container i{
+    margin-right: 1rem;
+    transition: color 0.3s ease-out;
+    font-size: 1rem;
+}
+
+#hero-i-container i{
+    text-decoration: none;
+    color: white;
+}
+
+#hero-i-container i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.hero-txt-container h2{
+    font-size: 1.5vw;
+    text-align: right;
+    font-weight: lighter;
+    margin-right: -1.1vw;
+}
+
+.hero-txt-container h3{
+    font-size: 1vw;
+    margin-top: 1vw;
+    word-break:normal;
+}
+
+.btn-container{
+    max-height: 5rem;
+    min-width: 100%;
+}
+
+@media only screen and (max-width: 1400px){
+    .hero-txt-container button p{
+        font-size: 0.9vw;
+    }
+}
+@media only screen and (max-width: 991px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .hero-txt-container{
+        width: 100%;
+        text-align: center;
+        height: 50%;
+        
+    }
+    .hero-txt-container button p{
+        font-size: 0.7rem;
+    }
+    .hero-txt-container div{
+        width: 70%;
+    }
+    .hero-txt-container h1{
+        font-size: 8vw;
+    }
+    .hero-txt-container h2{
+        text-align: center;
+        font-size: 2vw; 
+        
+    }
+    .hero-txt-container h3{
+        font-size: 1.5vw;
+    }
+    .hero-vid-container{
+        width: 100%;
+        height: 60%
+    }
+    .hero-vid-container video{
+       height: 100%;
+    }
+
+    .hero-txt-container button{
+        align-self: center;
+        padding: 1em 1em;
+        margin-top: 1rem;
+        max-width: 100vw;
+    }
+
+    #hero-i-container{
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       margin-top: 2vh;
+        
+    }
+    #hero-i-container i{
+        margin: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 633px){
+    .hero-txt-container h1{
+        font-size: 2.5rem;
+        margin: 0;
+       
+    }
+    .hero-txt-container div{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-txt-container button p{
+        font-size: 0.6em;
+    }
+    .hero-txt-container h2{
+        text-align: center;
+        font-size: 3vw;
+        margin-top: -1vw;
+    }
+    .hero-txt-container h3{
+        font-size:2vw;
+    }
+    #hero-i-container i{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 250px){
+    .hero-txt-container h1{
+        font-size: 1.4rem;
+
+    }
+}
+
+@media only screen and (max-width: 150px){
+    *{
+        display: none;
+    }
+}

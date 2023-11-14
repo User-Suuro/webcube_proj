@@ -1,0 +1,31 @@
+*{
+    padding:  0;
+    margin: 0;
+}
+#meet {
+    text-align: center;
+    color: antiquewhite;
+    background-color: #0F1523;
+}
+#mission{
+    background-color: #0F1523;
+}
+#mission p{
+    justify-content: center;
+    text-align: flex;
+    font-size: medium;
+    color: antiquewhite;
+}
+#mission h1{
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+
+}
+#mission a {
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: large;
+
+}

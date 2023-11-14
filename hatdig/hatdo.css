@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: darkslategrey;
+
+}
+
+#dom{
+    text-align: right;
+    color: aquamarine;
+}
+#low{
+    width: 500px;
+    height: 100px;
+    
+}
+
+#myDiv{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+#marcy{
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+    #low{
+        width: 200px;
+        height: 20px;
+        
+    }
+    #wol{
+        width: 200px;
+        height: 20px;
+    }
+    #myDiv{
+        justify-content: left;
+    }
+}

@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#body{
+    background-color: #0F1523;
+}
+#contact {
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
